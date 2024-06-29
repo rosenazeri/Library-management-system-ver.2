@@ -2306,77 +2306,49 @@ public class Main {
             String[] info = command[1].split("\\|");
             //info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9], info[10], info[11]
             if (command[0].equals("add-library")) {
-                //اضافه کردن کتابخانه
                 AddLib(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6]);
             } else if (command[0].equals("add-category")) {
-                //اضافه کردن کتگوری
                 AddCat(info[0] , info[1] , info[2] , info[3] , info[4]);
             } else if (command[0].equals("add-student")) {
-                //اضافه کردن دانشجو
                 AddStu(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6],info[7] , info[8]);
             } else if (command[0].equals("add-manager")) {
-                //اضافه کردن منیجر
                 AddManager(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9]);
             } else if (command[0].equals("add-staff")) {
-                //اضافه کردن کارکن
                 AddStf(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9]);
             } else if (command[0].equals("remove-user")) {
-                //حذف کاربر
                 RemoveUser(info[0] , info[1] , info[2]);
             } else if (command[0].equals("add-book")) {
-                //اضافه کردن کتاب
                 AddBook(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9]);
             } else if (command[0].equals("add-thesis")) {
-                //اضافه کردن تز
                 AddThesis(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8]);
             } else if (command[0].equals("add-ganjineh-book")) {
-                //اضافه کردن گنجینه
                 AddGanjine(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9]);
             } else if (command[0].equals("add-selling-book")) {
-                //اضافه کردن کتاب های فروشی
                 AddSellingBook(info[0] , info[1] , info[2] , info[3] , info[4] , info[5] , info[6] ,info[7] , info[8] , info[9] , info[10], info[11]);
             } else if (command[0].equals("remove-resource")) {
-                //  حذف کتب
                 RemoveResource(info[0] , info[1] , info[2] , info[3]);
             } else if (command[0].equals("buy")) {
-                // خرید کتاب
                 BuyBook(info[0] , info[1] , info[2] , info[3]);
             } else if (command[0].equals("read")) {
-                // خواندن کتاب گنجینه
                 ReadBook(info[0] , info[1] , info[2] , info[3] , info[4] , info[5]);
             } else if (command[0].equals("add-comment")) {
-                // اضافه کردن نظر به منبع
                 AddComment(info[0] , info[1] , info[2] , info[3] , info[4]);
             } else if (command[0].equals("borrow")) {
-                // قرض کتاب
                 BorrowBook(info[0] , info[1] , info[2] , info[3] , info[4] , info[5]);
             } else if (command[0].equals("return")) {
-                // پس دادن کتاب
                 ReturnBook(info[0] , info[1] , info[2] , info[3] , info[4] , info[5]);
             } else if (command[0].equals("search")) {
-                // سرچ
                 Search(info[0]);
             } else if (command[0].equals("search-user")) {
-                // سرچ
                 SearchUser(info[0] , info[1] , info[2]);
             } else if (command[0].equals("category-report")) {
-                //گزارش
                 CatReport(info[0] , info[1] , info[2] , info[3]);
             } else if (command[0].equals("library-report")) {
-                //گزارش
                 LibReport(info[0] , info[1] , info[2]);
             } else if (command[0].equals("report-passed-deadline")) {
-                //گزارش
                 PassedDeadline(info[0] , info[1] , info[2] , info[3] , info[4]);
             } else if (command[0].equals("report-penalties-sum")) {
-                //کل جریمه ها
                 jarime(info[0] , info[1]);
-            }
-            else if (command[0].equals("reserve-seat")) {
-                //رزرو میز
-
-            }else if (command[0].equals("report-most-popular")) {
-
             }
         }
     }
